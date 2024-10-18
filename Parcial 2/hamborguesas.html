@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio Hamburguesas  </title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table>
+        <th  style="width: 25%;">
+            <img src="descarga.png" width="90%">
+        </th>
+        <th style="width: 75%;"> Carl's Jr. 
+            <br> Av, Anahuac, 66450 san nicolas. topochico 101
+            <br>
+             <hr style="background-color: aquamarine;">
+            <marquee> "SI NO ES UNA HAMBURGUESA GRANDE Y JUGOSA NO ES UNA CARL´S JR"</marquee></th>
+    </table>
+    <center>
+    <table>
+        <thead>
+            <tr>
+                <th > Seleccionar producto</th>
+                <th> Detalles de mi hamborguesa </th>
+                <th> Cantidad y orden </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 
+                    <label for="radiohamsencilla"> Hamburguesa sencilla 35.00 mxn </label>
+                    <input type="radio" name="tipo de hamburguesa" id="radiohamsencilla" value="hamburguesasencilla">
+                    <br>
+                    <label for="radiohambespecial"> Hamburguesa especial 45.00 mxn</label>
+                    <input type="radio" name=" tipodeHamburguesa" id="radiohambespecial" value="hamburguesaespecial">
+                    <br>
+                    <label for="radiodoble"> Hamburguesa doble 60.00 mxn</label>
+                    <input type="radio" name=" tipodeHamburguesa" id="radiodoble" value="hamburguesadoble">
+                    <br>
+                    <label for="radiosuprema"> Hamburguesa suprema 90.00 mxn</label>
+                    <input type="radio" name=" tipodeHamburguesa" id="radiosuprema" value="hamburguesasuprema">
+                </td>
+                <td>
+                    <label for="radiotradicional"> Tradicional Especial </label>
+                    <input type="radio" name=" tipodecarne" id="radiotradicional">
+                    <br>
+                    <label for="radioangus"> Angus</label>
+                    <input type="radio" name=" tipodecarne" id="radioangus">
+                    <br>
+                    <label for="radiopollo"> Pollo </label>
+                    <input type="radio" name=" tipodecarne" id="radiopollo">
+                    <br>
+                    <label for="radioroast beef"> Roast beef</label>
+                    <input type="radio" name=" tipodecarne" id="radioroastbeef">
+                </td>
+                <td>
+                    <label for="checkboxcebolla"> cebolla</label>
+                    <input type="checkbox" name="ingrediente cebolla" id="checkboxcebolla" value="ingredientecebolla">
+                    <br>
+                    <label for="checkboxtomate"> Tomate</label>
+                    <input type="checkbox" name="ingredientetomate" id="checkboxtomate" value="ingredientetomate">
+                    <br>
+                    <label for="checkboxqueso"> queso amarillo</label>
+                    <input type="checkbox" name="ingrediente queso" id="checkboxqueso" value="ingredientequeso">
+                    <br>
+                    <label for="checkboxjamon"> Jamon</label>
+                    <input type="checkbox" name="ingrediente Jamon" id="checkboxjamon" value="ingredientejamon">
+                    <br>
+                    <label for="checkbox Aguacate"> Aguacate</label>
+                    <input type="checkbox" name="ingrediente aguacate" id="checkboxaguacate" value="ingredienteaguacate">
+                    <br>
+                </td>
+                <td>
+                    <label for="checkboxcebollam"> cebolla Morada </label>
+                    <input type="checkbox" name="ingrediente cebolla m" id="checkboxcebollam" value="ingredientecebollam">
+                    <br>
+                    <label for="checkboxquesog"> Queso gouda</label>
+                    <input type="checkbox" name="ingrediente quesog" id="checkboxquesog" value="ingredientequesog">
+                    <br>
+                    <label for="checkboxpiña"> Piña</label>
+                    <input type="checkbox" name="ingrediente Piña" id="checkboxPiña" value="ingredientePiña">
+                    <br>
+                    <label for="checkboxchamppiñones"> Champiñones </label>
+                    <input type="checkbox" name="ingrediente champiñones" id="checkboxchampiñones" value="ingredientechampiñones">
+                    <br>
+                    <label for="checkboxpeperoni"> Peperoni </label>
+                    <input type="checkbox" name="ingrediente peperoni" id="checkboxpeperoni" value="ingredientepeperoni">
+                    <br>
+                </td>
+                <td>
+                    <label for="inpcanthamburguesa"> Cantidad </label><input type="number" name=" cantidad hamburguesa" id="inpcanthamburguesa">
+               <br>
+               <br>
+                <label for="inpcliente"> cliente </label>
+                <input type="text" name="clientehamburguesa" id="inpcliente">
+                <br>
+                <br>
+                <label for="listaentrega"> Engtrega en </label>
+            
+
+                <select name="tipo de engtrega" id="listaentrega">
+                    <option value="1"> a domicilio</option>
+                    <option value="2">Para coomer aqui</option>
+                    <option value="3"> Pick up </option>
+                </select>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                 <input type="submit" value="Enviar datos">
+                </td>
+            </tr>
+        </tfoot>
+    </table> </center>
+</body>
+</html>
