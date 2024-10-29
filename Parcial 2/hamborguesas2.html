@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ejercicio Hamburguesas  </title>
+    <title>Document</title>
     <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            word-spacing: 4px;
+        }
+
+        th{
+            color: yellow;
+            text-transform: uppercase;
+            font-size: medium;
+        }
         
     </style>
 </head>
 <body>
-    <form id="formulario" action="">
     <table>
         <th  style="width: 25%;">
             <img src="descarga.png" width="90%">
@@ -17,15 +27,20 @@
         <th style="width: 75%;"> Carl's Jr. 
             <br> Av, Anahuac, 66450 san nicolas. topochico 101
             <br>
-             <hr style="background-color: aquamarine;">
+             <hr>
             <marquee> "SI NO ES UNA HAMBURGUESA GRANDE Y JUGOSA NO ES UNA CARL´S JR"</marquee></th>
-    </table>
+    </table >
+    <br>
+    <br>
+    <br>
     <center>
     <table>
         <thead>
             <tr>
                 <th > Seleccionar producto</th>
                 <th> Detalles de mi hamborguesa </th>
+                <th></th>
+                <th></th>
                 <th> Cantidad y orden </th>
             </tr>
         </thead>
@@ -118,70 +133,5 @@
             </tr>
         </tfoot>
     </table> </center>
-    </form>
 </body>
-<script>
-    var tabla = document.getElementsByTagName("table");
-    var registros = document.getElementsByTagName("tr");
-    var input = document.getElementsByTagName ("input");
-    var radio=document.getElementById("radiohamsencilla");
-
-    
-    //var nuevo = document.createElement("input");
-
-    //var contenido = document.createTextNode("Hamburguesa Doble suprema 120 mxn");
-
-    //nuevo.appendChild(contenido);
-
-    //var opciones = document.getElementsByClassName("opcionesdehamburguesas ")
-    //opcion[0].appendChild
-
-     
-    
-    //var nuevo = document.createElement("input");
-   // var contenido = document.createTextNode(" Cantidad, Clientes y Tipo de entrega");
-    //nuevo.appendChild(contenido);
-   // var opciones = document.getElementsByClassName("dinero");
-   // opcion[0].appendChild
-    //salio mal arriba
-
-    var formulario = document.
-    getElementById("formulario");
-
-
-    function calcular (e){
-        var total = 0.0;
-        if(f.tipodehamburguesa.value == "hamburguesasencilla" )
-    {
- total = 49.99;
-    }
-
-    else if (f.tipodehamburguesa.value =="hamburguesaespecial")
-    {
-        total = 59.99;
-    }
-
-    else if (f.tipodehamburguesa.value ==" hamburguesadoble")
-    {
-        total = 79.99;
-    }
-    
-    else (f.tipodehamburguesa.value ==" hamburguesasuprema")
-    {
-        total = 99.99;
-    }
-
-    
-    alert ("total a pagar es de" + total);
-    addEventListener("submit", calcular);
-
-
-    }
-
-
-    
-
-    
-
-</script>
 </html>
