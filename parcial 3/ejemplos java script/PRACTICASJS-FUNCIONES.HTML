@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    <form id="operacion" action="">
+        <label for=""> Escribe el numero 1</label>
+        <input id="Uno" type="number">
+        <br>
+        <label for="">Escribe el numero 2</label>
+        <input id="Dos" type="number">
+        <button type="submit">Sumar los numeros</button>
+    </form>
+</body>
+<script>
+
+    function suma (n1, n2){
+
+        var resultado = n1 + n2;
+
+        alert(resultado)
+        return resultado;
+    }
+
+    var inputs = document.getElementsByTagName("input");
+    var numUnoUsuario;
+    var numDosUsuario;
+
+    var operacion = document.getElementById("operacion");
+    operacion.addEventListener("submit", suma);
+
+   // document.write( suma(numUnoUsuario, numDosUsuario));
+
+</script>
+</html>
