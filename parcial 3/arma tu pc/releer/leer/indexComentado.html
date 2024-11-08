@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia para Elena xd</title>
+  <style> label{color:white } </style>
+</head>
+<body>
+<hr color="white" size="5" width="85%">
+    <table width="85%">
+        <tr>
+            <td width="60%">
+                <img src="./images/banner.jpg" width="90%">
+                <font color="white" face="arial black" size="6"> <b>TODO PARA TU COMPUTADORA </b></label><br>
+                    <hr color="blue">
+                    <font color="white" face="arial" size="3"> <b> Selecciona los componentes de tu preferencia y
+                            arma la computadora a tu gusto. </b></label><br>
+                        <marquee bgcolor="darkblue">
+                            <font color="white" face="arial" size="3"> Gabinetes, Mother Boards, Procesadores, Memorias,
+                                Monitores, Discos Duros, Perifericos y Accesorios.</label>
+                        </marquee><br>
+            </td>
+            <td width="40%">
+                <img src="./images/compu.gif" width="80%"><br>
+            </td>
+        </tr>
+    </table>
+    <hr color="white" size="5" width="85%">
+    <form id="idTienda" name="tiendacom">
+        <table width="90%" bgcolor="darkblue">
+            <tr>
+                <td width="30%">
+                    <hr><center>
+                        <label><b> GABINETE</b></label>
+                    </center><hr><center></center>
+                    <hr>
+          <!-- Input para Gabinete: Minitorre -->
+<input type="radio" name="gab" id="Minitorre" value="Minitorre" onclick="calPr()">
+<label  for="Minitorre"> Minitorre 618.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción Minitorre -->
+<!-- Código JS: Si el valor seleccionado es "Minitorre", se agrega 618 al precio total -->
+<!-- Código JS: if (formulario.gab.value == "Minitorre") { precioTotal += 618; } -->
+
+<!-- Input para Gabinete: Torre1 -->
+<input type="radio" name="gab" id="Torre1" value="Torre1" onclick="calPr()">
+<label  for="Torre1"> Torre 1,700.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción Torre1 -->
+<!-- Código JS: Si el valor seleccionado es "Torre1", se agrega 1700 al precio total -->
+<!-- Código JS: else if (formulario.gab.value == "Torre1") { precioTotal += 1700; } -->
+
+<!-- Input para Gabinete: Desktop -->
+<input type="radio" name="gab" id="Desktop" value="Desktop" onclick="calPr()">
+<label for="Desktop"> Desktop 588.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción Desktop -->
+<!-- Código JS: Si el valor seleccionado es "Desktop", se agrega 588 al precio total -->
+<!-- Código JS: else if (formulario.gab.value == "Desktop") { precioTotal += 588; } -->
+
+<!-- Input para Gabinete: Gamer1 -->
+<input type="radio" name="gab" id="Gamer1" value="Gamer1" onclick="calPr()">
+<label> Gamer 2,700.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción Gamer1 -->
+<!-- Código JS: Si el valor seleccionado es "Gamer1", se agrega 2700 al precio total -->
+<!-- Código JS: else if (formulario.gab.value == "Gamer1") { precioTotal += 2700; } -->
+
+<hr><label><b>PROCESADOR </b></label><hr>
+              <!-- Input para Procesador: Celeron -->
+<input type="radio" name="pro" id="Celeron" value="Celeron" onclick="calPr();">
+<label> Celeron 900.00 </label> 
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción Celeron -->
+<!-- Código JS: Si el valor seleccionado es "Celeron", se agrega 900 al precio total -->
+<!-- Código JS: if (formulario.pro.value == "Celeron") { precioTotal += 900; } -->
+
+<!-- Input para Procesador: i3 -->
+<input type="radio" name="pro" id="i3" value="i3" onclick="calPr();">
+<label> i3 1,900.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción i3 -->
+<!-- Código JS: Si el valor seleccionado es "i3", se agrega 1900 al precio total -->
+<!-- Código JS: else if (formulario.pro.value == "i3") { precioTotal += 1900; } -->
+
+<!-- Input para Procesador: i5 -->
+<input type="radio" name="pro" id="i5" value="i5" onclick="calPr();">
+<label> i5 2,600.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción i5 -->
+<!-- Código JS: Si el valor seleccionado es "i5", se agrega 2600 al precio total -->
+<!-- Código JS: else if (formulario.pro.value == "i5") { precioTotal += 2600; } -->
+
+<!-- Input para Procesador: i7 -->
+<input type="radio" name="pro" id="i7" value="i7" onclick="calPr();">
+<label> i7 6,700.00 </label>
+<br>
+<!-- Explicación: Este input se ejecuta cuando se selecciona la opción i7 -->
+<!-- Código JS: Si el valor seleccionado es "i7", se agrega 6700 al precio total -->
+<!-- Código JS: else if (formulario.pro.value == "i7") { precioTotal += 6700; } -->
+
+<hr><center>
+  <label><b>MOTHER BOARD </b></label><hr><hr>
+<!-- Select para placa base -->
+<select name="mb" onchange="calPr()">
+    <!-- Opción Estandar -->
+    <option value=900> Estandar 900.00 </option>
+    <!-- Explicación: Esta opción representa la placa base de tipo Estandar, que tiene un precio de 900 -->
+    <!-- Código JS: Si se selecciona esta opción, se suma 900 al precio total -->
+    <!-- Código JS: if (formulario.mb.value == 900) { precioTotal += 900; } -->
+
+    <!-- Opción Profesional -->
+    <option value=1700> Profeccional 1,700.00 </option>
+    <!-- Explicación: Esta opción representa la placa base de tipo Profesional, con un precio de 1,700 -->
+    <!-- Código JS: Si se selecciona esta opción, se suma 1700 al precio total -->
+    <!-- Código JS: else if (formulario.mb.value == 1700) { precioTotal += 1700; } -->
+
+    <!-- Opción Enterprise -->
+    <option value=3400> Enterprice 3,400.00 </option>
+    <!-- Explicación: Esta opción representa la placa base de tipo Enterprise, con un precio de 3,400 -->
+    <!-- Código JS: Si se selecciona esta opción, se suma 3400 al precio total -->
+    <!-- Código JS: else if (formulario.mb.value == 3400) { precioTotal += 3400; } -->
+
+    <!-- Opción Gamer -->
+    <option value=4500> Gamer 4,500.00 </option>
+    <!-- Explicación: Esta opción representa la placa base de tipo Gamer, con un precio de 4,500 -->
+    <!-- Código JS: Si se selecciona esta opción, se suma 4500 al precio total -->
+    <!-- Código JS: else if (formulario.mb.value == 4500) { precioTotal += 4500; } -->
+</select>
+</center><br>
+                <td width="30%"><hr><center>
+          <label><b>DISCO DURO </b></label>
+                    </center><hr><center></center><hr>
+<!-- Input para disco duro: 500GB -->
+<input type="radio" name="disc" id="500GB" value="500GB" onclick="calPr()">
+<label> 500 GB 520.00 </label> <br>
+<!-- Explicación: Esta opción representa un disco duro de 500 GB con un precio de 520 -->
+<!-- Código JS: if (formulario.disc.value == "500GB") { precioTotal += 520; } -->
+
+<!-- Input para disco duro: 750GB -->
+<input type="radio" name="disc" id="750GB" value="750GB" onclick="calPr()">
+<label> 750 GB 650.00 </label> <br>
+<!-- Explicación: Esta opción representa un disco duro de 750 GB con un precio de 650 -->
+<!-- Código JS: else if (formulario.disc.value == "750GB") { precioTotal += 650; } -->
+
+<!-- Input para disco duro: 1TB -->
+<input type="radio" name="disc" id="1TB" value="1TB" onclick="calPr()">
+<label> 1 TB 880.00 </label> <br>
+<!-- Explicación: Esta opción representa un disco duro de 1 TB con un precio de 880 -->
+<!-- Código JS: else if (formulario.disc.value == "1TB") { precioTotal += 880; } -->
+
+<!-- Input para disco SSD: 250GB -->
+<input type="radio" name="disc" id="250GBSSD" value="250GBSSD" onclick="calPr()">
+<label> 250 GB SSD 330.00 </label> <br>
+<!-- Explicación: Esta opción representa un disco SSD de 250 GB con un precio de 330 -->
+<!-- Código JS: else if (formulario.disc.value == "250GBSSD") { precioTotal += 330; } -->
+
+<!-- Input para disco SSD: 500GB -->
+<input type="radio" name="disc" id="500GBSSD" value="500GBSSD" onclick="calPr()">
+<label> 500 GB SSD 770.00 </label>
+<!-- Explicación: Esta opción representa un disco SSD de 500 GB con un precio de 770 -->
+<!-- Código JS: else if (formulario.disc.value == "500GBSSD") { precioTotal += 770; } -->
+<hr><center>
+                        <label><b>MEMORIA RAM</b></label>
+                    </center><hr><center></center><hr>
+              <!-- Input para memoria RAM: 4GB -->
+<input type="radio" name="mem" id="4GB" value="4GB" onclick="calPr()">
+<label> 4 GB 390.00 </label> <br>
+<!-- Explicación: Esta opción representa 4 GB de memoria RAM con un precio de 390 -->
+<!-- Código JS: if (formulario.mem.value == "4GB") { precioTotal += 390; } -->
+
+<!-- Input para memoria RAM: 8GB -->
+<input type="radio" name="mem" id="8GB" value="8GB" onclick="calPr()">
+<label> 8 GB 500.00 </label> <br>
+<!-- Explicación: Esta opción representa 8 GB de memoria RAM con un precio de 500 -->
+<!-- Código JS: else if (formulario.mem.value == "8GB") { precioTotal += 500; } -->
+
+<!-- Input para memoria RAM: 16GB -->
+<input type="radio" name="mem" id="16GB" value="16GB" onclick="calPr()">
+<label> 16 GB 800.00 </label> <br>
+<!-- Explicación: Esta opción representa 16 GB de memoria RAM con un precio de 800 -->
+<!-- Código JS: else if (formulario.mem.value == "16GB") { precioTotal += 800; } -->
+                    <hr><center>
+                        <label><b>MONITOR</b></label>
+                        <hr><hr>
+<!-- Selección de monitor -->
+<select name="moni" onchange="calPr()">
+    <!-- Opción para monitor de tamaño 15" -->
+    <option value=1000> Tamaño 15" 1,000.00</option>
+    <!-- Explicación: Esta opción representa un monitor de 15" con un precio de 1,000 -->
+    <!-- Código JS: if (formulario.moni.value == "1000") { precioTotal += 1000; } -->
+
+    <!-- Opción para monitor de tamaño 21" -->
+    <option value=1400> Tamaño 21" 1,140.00</option>
+    <!-- Explicación: Esta opción representa un monitor de 21" con un precio de 1,140 -->
+    <!-- Código JS: else if (formulario.moni.value == "1400") { precioTotal += 1140; } -->
+
+    <!-- Opción para monitor de tamaño 21" -->
+    <option value=1650> Tamaño 21" 1,650.00</option>
+    <!-- Explicación: Esta opción representa un monitor de 21" con un precio de 1,650 -->
+    <!-- Código JS: else if (formulario.moni.value == "1650") { precioTotal += 1650; } -->
+
+    <!-- Opción para monitor de tamaño 25" -->
+    <option value=2700> Tamaño 25" 2,700.00</option>
+    <!-- Explicación: Esta opción representa un monitor de 25" con un precio de 2,700 -->
+    <!-- Código JS: else if (formulario.moni.value == "2700") { precioTotal += 2700; } -->
+</select>
+                    </center><br><br><br><br>
+                <td width="30%"><hr>
+                        <center>
+                            <label><b>PERIFERICOS Y ACCESORIOS </b></label>
+                        </center><hr><center></center> <hr>
+<!-- Selección de accesorios -->
+<!-- Teclado y Mouse inalámbricos -->
+<input type="checkbox" value="291" name="acc1" onclick="calPr()">
+<label> Teclado y Mouse inalambricos 291.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 291 al precio total si se selecciona -->
+<!-- Código JS: if (formulario.acc1.checked) { precioTotal += 291; } -->
+
+<!-- Bocinas SoundRound -->
+<input value="2240" type="checkbox" name="acc2" onclick="calPr()">
+<label> Bocinas SoundRound 2,240.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 2,240 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc2.checked) { precioTotal += 2240; } -->
+
+<!-- Cámara web -->
+<input value="1070" type="checkbox" name="acc3" onclick="calPr()">
+<label> Camara web 1,070.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 1,070 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc3.checked) { precioTotal += 1070; } -->
+
+<!-- Diadema -->
+<input value="900" type="checkbox" name="acc4" onclick="calPr()">
+<label > Diadema 900.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 900 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc4.checked) { precioTotal += 900; } -->
+
+<!-- Scanner -->
+<input value="1820" type="checkbox" name="acc5" onclick="calPr()">
+<label> Scanner 1,820.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 1,820 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc5.checked) { precioTotal += 1820; } -->
+
+<!-- Impresora Laser B/N -->
+<input value="2500" type="checkbox" name="acc6" onclick="calPr()">
+<label> Impresora Laser B/N 2,500.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 2,500 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc6.checked) { precioTotal += 2500; } -->
+
+<!-- Impresora de Inyección color -->
+<input value="700" type="checkbox" name="acc7" onclick="calPr()">
+<label> Impresora de Inyeccion color 2,700.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 2,700 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc7.checked) { precioTotal += 2700; } -->
+
+<!-- Joystick -->
+<input value="960" type="checkbox" name="acc8" onclick="calPr()">
+<label> Joystick 960.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 960 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc8.checked) { precioTotal += 960; } -->
+
+<!-- Memoria USB 8 GB -->
+<input value="70" type="checkbox" name="acc9" onclick="calPr()">
+<label> Memoria USB 8 GB 70.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 70 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc9.checked) { precioTotal += 70; } -->
+
+<!-- Regulador -->
+<input value="800" type="checkbox" name="acc10" onclick="calPr()">
+<label> Regulador 800.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 800 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc10.checked) { precioTotal += 800; } -->
+
+<!-- Sistema Operativo Windows Home -->
+<input value="2400" type="checkbox" name="acc11" onclick="calPr()">
+<label> Sistema Operativo Windows Home 2,400.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 2,400 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc11.checked) { precioTotal += 2400; } -->
+
+<!-- Office 365 Personal -->
+<input value="1300" type="checkbox" name="acc12" onclick="calPr()">
+<label> Office 365 Personal 1,300.00 </label> <br>
+<!-- Explicación: Esta opción agrega un costo de 1,300 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc12.checked) { precioTotal += 1300; } -->
+
+<!-- Vacuna Antivirus (McAfee) -->
+<input value="400" type="checkbox" name="acc13" onclick="calPr()">
+<label> Vacuna Antivirus (Mc Affe) 400.00 </label>
+<!-- Explicación: Esta opción agrega un costo de 400 al precio total si se selecciona -->
+<!-- Código JS: else if (formulario.acc13.checked) { precioTotal += 400; } -->
+
+<hr><center><br>
+        <font face="arial" color="white" size="3"> Tipo de cambio (Dlls &lt; --&gt; Pesos): <input
+        <input type="text" name="marca" size="9" value=18 onchange="calPr();"><br>
+        <hr> Total:
+        <input type="text" name="tot1" size="5"> Pesos
+        <input type="text" name="tot2" size="5"> Dolares<br></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+// getElementsByName: Esta función nos permite acceder a todos los elementos del formulario que tienen un atributo 'name' con el valor "tiendacom".
+// Nos devuelve una lista (array) de estos elementos, que se almacenan en la variable 'f'.
+var f = document.getElementsByName("tiendacom");
+
+// getElementById: Esta función se usa para acceder a un único elemento del DOM que tiene el atributo 'id' con el valor "idTienda".
+// Nos da el formulario entero con ese id, que luego usaremos para acceder y manipular sus campos.
+var formulario = document.getElementById("idTienda");
+
+// Función que calcula el precio total en pesos y dólares
+function calPr() {
+  // Limpiamos el campo 'tot1' (total en pesos) antes de realizar el cálculo, dejando el valor en vacío.
+  formulario.tot1.value = "";
+
+  // Inicializamos la variable 'totalPesos' en 0. Esta variable acumulará el precio total en pesos.
+  let totalPesos = 0;
+
+  // Condicionales 'if' y 'else if' que verifican qué opción fue seleccionada en el formulario.
+  // En función de la opción seleccionada (tipo de gabinete, procesador, etc.), se sumará un precio al total en pesos.
+
+  // Condicional que verifica el tipo de gabinete seleccionado.
+  if (formulario.gab.value == "Minitorre") {
+    // Si el gabinete seleccionado es "Minitorre", sumamos 100 al total de pesos
+    totalPesos += 100;
+  } else if (formulario.gab.value == "Torre1") {
+    // Si el gabinete seleccionado es "Torre1", sumamos 1700 al total de pesos
+    totalPesos += 1700;
+  } else if (formulario.gab.value == "Desktop") {
+    // Si el gabinete seleccionado es "Desktop", sumamos 580 al total de pesos
+    totalPesos += 580;
+  } else if (formulario.gab.value == "Gamer1") {
+    // Si el gabinete seleccionado es "Gamer1", sumamos 2700 al total de pesos
+    totalPesos += 2700;
+  }
+
+  // Condicionales para verificar el procesador seleccionado y sumar el costo correspondiente al total de pesos.
+  if (formulario.pro.value == "Celeron") {
+    // Si el procesador es "Celeron", sumamos 900 al total de pesos
+    totalPesos += 900;
+  } else if (formulario.pro.value == "i3") {
+    // Si el procesador es "i3", sumamos 1900 al total de pesos
+    totalPesos += 1900;
+  } else if (formulario.pro.value == "i5") {
+    // Si el procesador es "i5", sumamos 2600 al total de pesos
+    totalPesos += 2600;
+  } else if (formulario.pro.value == "i7") {
+    // Si el procesador es "i7", sumamos 6700 al total de pesos
+    totalPesos += 6700;
+  }
+
+  // Condicionales similares para verificar el disco duro seleccionado y sumar su precio al total de pesos.
+  if (formulario.disc.value == "500GB") {
+    // Si el disco duro seleccionado es de 500GB, sumamos 520 al total de pesos
+    totalPesos += 520;
+  } else if (formulario.disc.value == "750GB") {
+    // Si el disco duro seleccionado es de 750GB, sumamos 650 al total de pesos
+    totalPesos += 650;
+  } else if (formulario.disc.value == "1TB") {
+    // Si el disco duro seleccionado es de 1TB, sumamos 880 al total de pesos
+    totalPesos += 880;
+  } else if (formulario.disc.value == "250GBSSD") {
+    // Si el disco duro seleccionado es un SSD de 250GB, sumamos 330 al total de pesos
+    totalPesos += 330;
+  } else if (formulario.disc.value == "500GBSSD") {
+    // Si el disco duro seleccionado es un SSD de 500GB, sumamos 770 al total de pesos
+    totalPesos += 770;
+  }
+
+  // Condicionales para sumar el precio de la memoria RAM seleccionada.
+  if (formulario.mem.value == "4GB") {
+    // Si la memoria RAM seleccionada es de 4GB, sumamos 390 al total de pesos
+    totalPesos += 390;
+  } else if (formulario.mem.value == "8GB") {
+    // Si la memoria RAM seleccionada es de 8GB, sumamos 500 al total de pesos
+    totalPesos += 500;
+  } else if (formulario.mem.value == "16GB") {
+    // Si la memoria RAM seleccionada es de 16GB, sumamos 800 al total de pesos
+    totalPesos += 800;
+  }
+
+  // Verificamos el valor del monitor seleccionado (por ejemplo, 1500, 2000, etc.), y lo sumamos al total de pesos.
+  let monitores = formulario.moni.value;
+  totalPesos += parseFloat(monitores); // Convertimos el valor a número decimal y lo sumamos al total.
+
+  // Hacemos lo mismo con la motherboard, sumando su precio al total.
+  let motherBoard = formulario.mb.value;
+  totalPesos += parseFloat(motherBoard); // Convertimos el valor de la motherboard a número decimal y lo sumamos.
+
+  // Accesorios seleccionados: Verificamos si los checkboxes (casillas de selección) están marcados (checked).
+  // Si un checkbox está marcado, sumamos el valor correspondiente al total.
+
+  // Cada 'if' verifica si un checkbox está marcado, y si es así, suma su valor al total en pesos.No use el else if,eso es para casos donde son pocos casos y no me sumaba cuando puse los 13 checkboxes entonces lo deje solo con if y ya funciono.
+  if (formulario.acc1.checked) {
+    totalPesos += parseFloat(formulario.acc1.value);
+  } if (formulario.acc2.checked) {
+    totalPesos += parseFloat(formulario.acc2.value);
+  } if (formulario.acc3.checked) {
+    totalPesos += parseFloat(formulario.acc3.value);
+  } if (formulario.acc4.checked) {
+    totalPesos += parseFloat(formulario.acc4.value);
+  } if (formulario.acc5.checked) {
+    totalPesos += parseFloat(formulario.acc5.value);
+  } if (formulario.acc6.checked) {
+    totalPesos += parseFloat(formulario.acc6.value);
+  } if (formulario.acc7.checked) {
+    totalPesos += parseFloat(formulario.acc7.value);
+  } if (formulario.acc8.checked) {
+    totalPesos += parseFloat(formulario.acc8.value);
+  } if (formulario.acc9.checked) {
+    totalPesos += parseFloat(formulario.acc9.value);
+  } if (formulario.acc10.checked) {
+    totalPesos += parseFloat(formulario.acc10.value);
+  } if (formulario.acc11.checked) {
+    totalPesos += parseFloat(formulario.acc11.value);
+  } if (formulario.acc12.checked) {
+    totalPesos += parseFloat(formulario.acc12.value);
+  } if (formulario.acc13.checked) {
+    totalPesos += parseFloat(formulario.acc13.value);
+  }
+
+  // Después de sumar todo, mostramos el total en pesos en el campo 'tot1'.
+  // toFixed(2) es utilizado para mostrar el total con dos decimales, lo que asegura que el formato sea legible y preciso.
+  formulario.tot1.value = totalPesos.toFixed(2);
+
+  // Calculamos el total en dólares, considerando que 1 dólar es igual a 18 pesos.
+  // Usamos parseFloat para convertir el totalPesos a número decimal y luego lo dividimos por 18.
+  let totalDolares = totalPesos / 18;
+
+  // Mostramos el total en dólares en el campo 'tot2' con dos decimales, para una presentación clara.
+  formulario.tot2.value = totalDolares.toFixed(2);
+}
+  </script>
+</body>
+</html>

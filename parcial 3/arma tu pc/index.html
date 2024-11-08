@@ -1,252 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arma tu pc</title>
-    <style>
-        body {
-            background-image: url(./img/fondo.jpg);
-            color: aliceblue;
-            padding-right: 4%;
-            padding-left: 4%;
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
-
-        h1{
-            color: aliceblue;
-            text-transform: uppercase;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-        h5{
-            color: aliceblue;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align:center;
-        }
-        h4{
-            color: aliceblue;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            background-color: rgb(7, 7, 131);
-        }
-
-        .tabla {
-            background-color: rgb(7, 7, 131);
-        }
-
-
-        h2{
-            color: aliceblue;
-            text-transform: uppercase;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        h3{
-            color: aliceblue;
-        }
-
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Arma tu pc</title>
+  <style>
+   label{color:white }
+   body{
+    background-image: url(img/fondo.jpg);
+   }
+   </style>
 </head>
 <body>
-    <hr color= "white" size="5">
-    <center>
-    <table>
+<hr color="white" size="5" width="85%">
+    <table width="85%">
         <tr>
             <td width="60%">
                 <img src="img/banner.jpg" width="90%">
-                <br>
-                <h1> Todo para tu computadora</h1>
-                <hr color="blue" size="2">
-                <h5> Selecciona los elementos de tu preferencia y arma la computadora a tu
-                    <br> gusto.
-                </h5>
-                <marquee><h4> Discos Duros, perifericos y Accesorios.</h4></marquee>
+                <font color="white" face="arial black" size="6"> <b>TODO PARA TU COMPUTADORA </b></label><br>
+                    <hr color="blue">
+                    <font color="white" face="arial" size="3"> <b> Selecciona los componentes de tu preferencia y
+                            arma la computadora a tu gusto. </b></label><br>
+                        <marquee bgcolor="darkblue">
+                            <font color="white" face="arial" size="3"> Gabinetes, Mother Boards, Procesadores, Memorias,
+                                Monitores, Discos Duros, Perifericos y Accesorios.</label>
+                        </marquee><br>
             </td>
             <td width="40%">
-                <img src="./img/compu.gif" width="(70%)">
-
+                <img src="img/compu.gif" width="80%"><br>
             </td>
         </tr>
     </table>
-    </center>
-    <hr color="white" size="5">
-    <br>
-    <center>
-    <form name="tiendacom">
-        <div class="tabla">
-        <table width="90%">
+    <hr color="white" size="5" width="85%">
+    <form id="idTienda" name="tiendacom">
+        <table width="90%" bgcolor="darkblue">
             <tr>
                 <td width="30%">
+                    <hr><center>
+                        <label><b> GABINETE</b></label>
+                    </center><hr><center></center>
                     <hr>
-                    <h2> gabinete</h2>
-                    <hr>
-                    <hr>
-                    <input type="radio" name="gab" onclick="calPr();" id="radiomini">
-                    <label for="radiomini"> Minitorre 618.00  </label>
-                    <br>
-                    <input type="radio" name="gab" onclick="calPr();" id="radiotorre">
-                    <label for="radiotorre">Torre 1,700.00  </label>
-                    <br>
-                    <input type="radio" name="gab" onclick="calPr();" id="radiodesktop">
-                    <label for="radiodesktop"> Desktop 588.00  </h3> </label>
-                    <br>
-                    <input type="radio" name="gab" onclick="calPr();" id="radiogamer">
-                    <label for="radiogamer">Gamer 1,700.00 </label>
-                    <hr>
-                    <h2> procesador </h2>
-                    <hr>
-                    <hr>
-                    <input type="radio" name="pro" onclick="calPr();" id="radioceleron"><label for="radioceleron"> Celeron 900.00 </label>
-                    <br>
-                    <input type="radio" name="pro" onclick="calPr();" id="radioi3"><label for="radioi3"> i3 1,900.00 </label>
-                    <br>
-                    <input type="radio" name="pro" onclick="calPr();" id="radioi5"><label for="radioi5"> i5 2,600.00 </label>
-                    <br>
-                    <input type="radio" name="pro" onclick="calPr();" id="radioi7"><label for="radioi7"> i7 6,700.00 </label>
-                    <br>
-                    <hr>
-                    <h2> Mother board </h2>
-                    <hr>
-                    <hr> 
-                    <select name="mb" onchange="calPr();">
-                        <option value="900"> Estandar 900.00 </option>
-                        <option value="1700"> Profesional  1,700.00 </option>
-                        <option value="3400"> Enterprice  3,400.00</option>
-                        <option value="4500"> Gamer 4,500.00</option>
-                    </select>
-                    <br>
-                    <td width="30%">
-                        <hr>
-                        <h2>disco duro</h2>
-                        <hr>
-                        <hr> 
-                        <input type="radio" name="disc" onclick="calPr();" id="radio500gb"><label for="radio500gb"> 500 GB  520.00 </label>
-                        <br>
-                        <input type="radio" name="disc" onclick="calPr();" id="radio750gb"><label for="radio750gb"> 700 GB  650.00 </label>
-                        <br>
-                        <input type="radio" name="disc" onclick="calPr();" id="radio1tb"><label for="radio1tb"> 1 TB  880.00 </label>
-                        <br>
-                        <input type="radio" name="disc" onclick="calPr();" id="radio250gbs"><label for="radio250gbs"> 250 GB SSD 330.00 </label>
-                        <br>
-                        <input type="radio" name="disc" onclick="calPr();" id="radio500gbs"><label for="radio500gbs"> 500 GB SSD 770.00 </label>
-                        <br>
-                        <hr>
-                        <h2> memoria ram </h2>
-                        <hr>
-                        <hr>
-                        <input type="radio" name="mem" onclick="calpr();" id="radio4gb"><label for="radio4gb"> 4 Gb 390.00 </label>
-                        <br>
-                        <input type="radio" name="mem" onclick="calpr();" id="radio8gb"><label for="radio8gb"> 8 Gb 500.00 </label>
-                        <br>
-                        <input type="radio" name="mem" onclick="calpr();" id="radio16gb"><label for="radio16gb"> 16 Gb 800.00 </label>
-                        <br>
-                        <hr>
-                        <h2> monitor </h2>
-                        <hr>
-                        <hr>
-                        <select name="moni" onchange="calPr();">
-                            <option value="1000">Tamaño 15" 1,000.00 </option>
-                            <option value="1140">Tamaño 21" 1,140.00 </option>
-                            <option value="1650">Tamaño 21" 1,650.00 </option>
-                            <option value="2700">Tamaño 25" 2,700.00 </option>
-                        </select>
+<input type="radio" name="gab" id="Minitorre" value="Minitorre" onclick="calPr()">
+<label  for="Minitorre"> Minitorre 618.00 </label>
+<br>
 
-                    </td>
-                    <td width="30%">
-                        
-                        <h2> perifericos y accesorios</h2> 
-                        <hr>
-                        <hr>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checktecymau">
-    <label for="checktecymau"> Teclado y mouse inalambrico 291.00</label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkbocinas">
-    <label for="checkbocinas"> Bocinas sound round 2,240.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkcamara">
-    <label for="checkcamara"> Camara web 1,070.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkdiadema">
-    <label for="checkdiadema"> Diadema 900.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkscanner">
-    <label for="checkscanner"> Scanner 1,820.00</label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkimpresoralaser">
-    <label for="checkimpresoralaser"> Impresora laser B/N 2,500.00</label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkimpreinyec">
-    <label for="checkimpreinyec"> Impresora de inyeccion color 2,700.00</label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkjoy">
-    <label for="checkjoy"> Joystick 960.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkmemoria">
-    <label for="checkmemoria"> Memoria usb 8gb 70.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkregular">
-    <label for="checkregular"> Regular 800.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checksistemas">
-    <label for="checksistemas"> Sistemas operativos windows home 2,400.00 </label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkoffice">
-    <label for="checkoffice"> Office 365 personal 1,300.00</label> <br>
-    <input type="checkbox" name="acc1"  onclick="calPr();" id="checkvacuna">
-    <label for="checkvacuna"> vacuna antivirus (mc affle) 400.00</label> <br>
-    <hr>
-    <br>
-    <label for="inputtipo"> Tipo de cambio (Dlls &lt; --&lt; Pesos ) : </label><input type="text" name="marca" size="9" value="18" id="inputtipo">          
-    <hr>
-    <br>
-     Total:<input type="text" name="tot1" size="5" id="inputpesos"><label for="inputpesos">Pesos</label> <input type="text" name="tot1" size="5" id="inputdolares"><label for="inputdolares">Dolares</label>
-</td>
-</tr>
-</table> 
-        </div>
+<input type="radio" name="gab" id="Torre1" value="Torre1" onclick="calPr()">
+<label  for="Torre1"> Torre 1,700.00 </label>
+<br>
+
+<input type="radio" name="gab" id="Desktop" value="Desktop" onclick="calPr()">
+<label for="Desktop"> Desktop 588.00 </label>
+<br>
+
+<input type="radio" name="gab" id="Gamer1" value="Gamer1" onclick="calPr()">
+<label> Gamer 2,700.00 </label>
+<br>
+
+
+<hr><label><b>PROCESADOR </b></label><hr>
+             
+<input type="radio" name="pro" id="Celeron" value="Celeron" onclick="calPr();">
+<label> Celeron 900.00 </label> 
+<br>
+
+<input type="radio" name="pro" id="i3" value="i3" onclick="calPr();">
+<label> i3 1,900.00 </label>
+<br>
+
+<input type="radio" name="pro" id="i5" value="i5" onclick="calPr();">
+<label> i5 2,600.00 </label>
+<br>
+
+<input type="radio" name="pro" id="i7" value="i7" onclick="calPr();">
+<label> i7 6,700.00 </label>
+<br>
+<hr><center>
+  <label><b>MOTHER BOARD </b></label><hr><hr>
+
+<select name="mb" onchange="calPr()">
+ 
+    <option value=900> Estandar 900.00 </option>
+   
+    <option value=1700> Profeccional 1,700.00 </option>
+   
+    <option value=3400> Enterprice 3,400.00 </option>
+  
+    <option value=4500> Gamer 4,500.00 </option>
+  
+</select>
+</center><br>
+                <td width="30%"><hr><center>
+          <label><b>DISCO DURO </b></label>
+                    </center><hr><center></center><hr>
+
+<input type="radio" name="disc" id="500GB" value="500GB" onclick="calPr()">
+<label> 500 GB 520.00 </label> <br>
+
+
+
+<input type="radio" name="disc" id="750GB" value="750GB" onclick="calPr()">
+<label> 750 GB 650.00 </label> <br>
+
+<input type="radio" name="disc" id="1TB" value="1TB" onclick="calPr()">
+<label> 1 TB 880.00 </label> <br>
+
+<input type="radio" name="disc" id="250GBSSD" value="250GBSSD" onclick="calPr()">
+<label> 250 GB SSD 330.00 </label> <br>
+
+<input type="radio" name="disc" id="500GBSSD" value="500GBSSD" onclick="calPr()">
+<label> 500 GB SSD 770.00 </label>
+
+<hr><center>
+                        <label><b>MEMORIA RAM</b></label>
+                    </center><hr><center></center><hr>
+             
+<input type="radio" name="mem" id="4GB" value="4GB" onclick="calPr()">
+<label> 4 GB 390.00 </label> <br>
+
+<input type="radio" name="mem" id="8GB" value="8GB" onclick="calPr()">
+<label> 8 GB 500.00 </label> <br>
+
+
+<input type="radio" name="mem" id="16GB" value="16GB" onclick="calPr()">
+<label> 16 GB 800.00 </label> <br>
+
+                    <hr><center>
+                        <label><b>MONITOR</b></label>
+                        <hr><hr>
+
+<select name="moni" onchange="calPr()">
+
+    <option value=1000> Tamaño 15" 1,000.00</option>
+   
+
+   
+    <option value=1400> Tamaño 21" 1,140.00</option>
+    
+    <option value=1650> Tamaño 21" 1,650.00</option>
+ 
+    <option value=2700> Tamaño 25" 2,700.00</option>
+  
+</select>
+                    </center><br><br><br><br>
+                <td width="30%"><hr>
+                        <center>
+                            <label><b>PERIFERICOS Y ACCESORIOS </b></label>
+                        </center><hr><center></center> <hr>
+
+<input type="checkbox" value="291" name="acc1" onclick="calPr()">
+<label> Teclado y Mouse inalambricos 291.00 </label> <br>
+
+<input value="2240" type="checkbox" name="acc2" onclick="calPr()">
+<label> Bocinas SoundRound 2,240.00 </label> <br>
+
+<input value="1070" type="checkbox" name="acc3" onclick="calPr()">
+<label> Camara web 1,070.00 </label> <br>
+
+<input value="900" type="checkbox" name="acc4" onclick="calPr()">
+<label > Diadema 900.00 </label> <br>
+
+<input value="1820" type="checkbox" name="acc5" onclick="calPr()">
+<label> Scanner 1,820.00 </label> <br>
+
+<input value="2500" type="checkbox" name="acc6" onclick="calPr()">
+<label> Impresora Laser B/N 2,500.00 </label> <br>
+
+<input value="700" type="checkbox" name="acc7" onclick="calPr()">
+<label> Impresora de Inyeccion color 2,700.00 </label> <br>
+
+<input value="960" type="checkbox" name="acc8" onclick="calPr()">
+<label> Joystick 960.00 </label> <br>
+
+<input value="70" type="checkbox" name="acc9" onclick="calPr()">
+<label> Memoria USB 8 GB 70.00 </label> <br>
+
+
+<input value="800" type="checkbox" name="acc10" onclick="calPr()">
+<label> Regulador 800.00 </label> <br>
+
+
+<input value="2400" type="checkbox" name="acc11" onclick="calPr()">
+<label> Sistema Operativo Windows Home 2,400.00 </label> <br>
+
+<input value="1300" type="checkbox" name="acc12" onclick="calPr()">
+<label> Office 365 Personal 1,300.00 </label> <br>
+
+<input value="400" type="checkbox" name="acc13" onclick="calPr()">
+<label> Vacuna Antivirus (Mc Affe) 400.00 </label>
+
+
+<hr><center><br>
+        <font face="arial" color="white" size="3"> Tipo de cambio (Dlls &lt; --&gt; Pesos): <input
+        <input type="text" name="marca" size="9" value=18 onchange="calPr();"><br>
+        <hr> Total:
+        <input type="text" name="tot1" size="5"> Pesos
+        <input type="text" name="tot2" size="5"> Dolares<br></center>
+                </td>
+            </tr>
+        </table>
     </form>
-    </center>
-    <br>
-    <br>
-    <br>
-    <hr color="blue" size="5">
-    <center>
-    <table>
-        <tr>
-            <th><h3> Pagina dessarrollada por: Elena García
-                <br> Derechos reservados
-                <br>Contacto : al.45519@un.edu.mx
-
-            </h3></th>
-        </tr>
-    </table>
-    </center>
-
     <script>
+var f = document.getElementsByName("tiendacom");
 
-        var f = document.getElementsByName("tiendacom");
-
-     function calPr ()
-     {
-        var gab = document.getElementsByName
-        ("gab");
-        alert("Estoy seleccionando " + gab);
-
-        if (f.gab.value == "radiomini" )
-     {
-        alert ("Estoy seleccionando" + f.gab.value);
-
-     }
-
-     else if(f.gab.value == "radiotorre")
-     {
-        alert ("estoy seleccionando" + f.gab.value)
-     }
-
-     else if(f.gab.value == "radiodesktop")
-     {
-        alert ("estoy seleccionando" + f.gab.value)
-     }
-
-     else (f.gab.value == "radiogamer")
-     {
-        alert ("estoy seleccionando" + f.gab.value)
-     }
-     }
+var formulario = document.getElementById("idTienda");
 
 
-    </script>
+function calPr() {
+  formulario.tot1.value = "";
+  let totalPesos = 0;
+
+
+  
+  if (formulario.gab.value == "Minitorre") {
+    totalPesos += 618;
+  } else if (formulario.gab.value == "Torre1") {
+    totalPesos += 1700;
+  } else if (formulario.gab.value == "Desktop") {
+    totalPesos += 588;
+  } else if (formulario.gab.value == "Gamer1") {
+    totalPesos += 2700;
+  }
+
+  
+  if (formulario.pro.value == "Celeron") {
+    totalPesos += 900;
+  } else if (formulario.pro.value == "i3") {
+    totalPesos += 1900;
+  } else if (formulario.pro.value == "i5") {
+    totalPesos += 2600;
+  } else if (formulario.pro.value == "i7") {
+    totalPesos += 6700;
+  }
+
+
+  if (formulario.disc.value == "500GB") {
+    totalPesos += 520;
+  } else if (formulario.disc.value == "750GB") {
+    totalPesos += 650;
+  } else if (formulario.disc.value == "1TB") {
+    totalPesos += 880;
+  } else if (formulario.disc.value == "250GBSSD") {
+    totalPesos += 330;
+  } else if (formulario.disc.value == "500GBSSD") {
+    totalPesos += 770;
+  }
+
+
+  if (formulario.mem.value == "4GB") {
+    totalPesos += 390;
+  } else if (formulario.mem.value == "8GB") {
+    totalPesos += 500;
+  } else if (formulario.mem.value == "16GB") {
+    totalPesos += 800;
+  }
+
+  
+  let monitores = formulario.moni.value;
+  totalPesos += parseFloat(monitores); 
+
+  
+  let motherBoard = formulario.mb.value;
+  totalPesos += parseFloat(motherBoard); 
+
+  if (formulario.acc1.checked) {
+    totalPesos += parseFloat(formulario.acc1.value);
+  } if (formulario.acc2.checked) {
+    totalPesos += parseFloat(formulario.acc2.value);
+  } if (formulario.acc3.checked) {
+    totalPesos += parseFloat(formulario.acc3.value);
+  } if (formulario.acc4.checked) {
+    totalPesos += parseFloat(formulario.acc4.value);
+  } if (formulario.acc5.checked) {
+    totalPesos += parseFloat(formulario.acc5.value);
+  } if (formulario.acc6.checked) {
+    totalPesos += parseFloat(formulario.acc6.value);
+  } if (formulario.acc7.checked) {
+    totalPesos += parseFloat(formulario.acc7.value);
+  } if (formulario.acc8.checked) {
+    totalPesos += parseFloat(formulario.acc8.value);
+  } if (formulario.acc9.checked) {
+    totalPesos += parseFloat(formulario.acc9.value);
+  } if (formulario.acc10.checked) {
+    totalPesos += parseFloat(formulario.acc10.value);
+  } if (formulario.acc11.checked) {
+    totalPesos += parseFloat(formulario.acc11.value);
+  } if (formulario.acc12.checked) {
+    totalPesos += parseFloat(formulario.acc12.value);
+  } if (formulario.acc13.checked) {
+    totalPesos += parseFloat(formulario.acc13.value);
+  }
+
+  formulario.tot1.value = totalPesos.toFixed(2);
+
+  let totalDolares = totalPesos / 18;
+  
+  formulario.tot2.value = totalDolares.toFixed(2);
+}
+  </script>
 </body>
 </html>
