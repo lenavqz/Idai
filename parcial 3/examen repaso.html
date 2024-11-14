@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo Telefonico</title>
+
+    <style>
+        body {
+            background-color: #e7c010f3
+        }
+
+        h1 {
+            font: "broadway";
+        }
+
+        label {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <script>
+        var formulario = document.getElementById("calculoMinutos");
+
+        function calcular(){
+            
+			var minCel = parseInt(formulario.minCel.value);            
+            var total = 0;
+            total = minCel * 10;
+
+			formulario.resultado.value = total;
+
+            if (formulario.plan.value == "1") {
+                total += 500;}
+
+            else if (formulario.plan.value == "2") {
+                    total += 650;}
+
+            else if (formulario.plan.value == "3") {
+                total += 750;  }
+                
+          else if (formulario.plan.value == "4") {
+             total += 400; }   
+
+             if (formulario.che1.checked){
+                total += parseFloat (formulario.che1.checked);
+             }
+             if (formulario.che2.checked){
+                total += parseFloat (formulario.che1.checked);
+             }
+             if (formulario.che3.checked){
+                total += parseFloat (formulario.che1.checked);
+             }
+             if (formulario.che4.checked){
+                total += parseFloat (formulario.che1.checked);
+             }
+
+            
+        }
+
+    </script>
+    <!-- <form action=""></form> -->
+    <form id="calculoMinutos" name="namecalculo" action="ReciboTelefonico(JS).html" method="GET">
+        <h1>RECIBO TELEFONICO</h1>
+        <label for="" >Minutos de celular (10.00 MXN c/u)</label>
+        <br>
+        <input type="number" id="minCel" value="1">
+
+        <hr>
+        <label for="">TIPO DE PLAN</label>
+        <br>
+        <input type="radio" name="plan" value="1">Solo teléfono<br>
+        <input type="radio" name="plan" value="2">Teléfono + Internet<br>
+        <input type="radio" name="plan" value="3">Teléfono + Internet + TV<br>
+        <input type="radio" name="plan" value="4">solo internet<br>
+
+        <hr>
+        <label for="">OTROS SERVICIOS</label>
+        <br>
+        <input type="checkbox" name="che1" value="500">Antivirus<br>
+        <input type="checkbox" name="che2" value="600">Serivicio de Nube<br>
+        <input type="checkbox" name="che3" value="700">Web Services<br>
+        <input type="checkbox" name="che4" value="800"> Services<br>
+
+        <hr>
+        <label for="">PAQUETES</label>
+        <br>
+        <select name="">
+            <option value="residencial">Residencial</option>
+            <option value="pyme">PYMES</option>
+            <option value="empresa">Empresas</option>
+        </select>
+
+        <hr>
+        <div class="result">
+			<input type="text" id="resultado"></p>
+		</div>	
+
+        <button type="button" onclick="calcular()">Calcular</button>
+
+    </form>
