@@ -1,43 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo proyecto</title>
 
     <link rel="stylesheet" href="../styles/estilos.css">
-    <link rel="stylesheet" href="../lib/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../lib/css/all.min.css">
 
+    <link rel="shortcut icon" href="../img/logo.png">
 
 </head>
+
 <body>
+
     <div class="menu-principal">
-        <div class="logo" id="logo">  
-            <img src="../img/logo.png" alt="logo">
+        <div class="logo" id="logo">
+            <img src="../img/logo.png" alt="Logo">
         </div>
-       <nav class="enlaces" id="enlaces">
-        <ul>
-            <li> <a href=""> Servicios </a></li>
-            <li> <a href=""> Equipo </a></li>
-            <li> <a href="" > Contacto </a></li>
-        </ul>   
-    </nav>
-    </div>
-    <div class="sociales">
-        <span class="fab fa-facebook"></span>
-        <span class="fab fa-instagram"></span>
-        <span class="fab fa-twitter"></span>
-        <span class="fab fa-youtube"></span>
-    </div>
+
+        <div class="menu-bar" id="menuBar">
+
+            <i class="fas fa-angle-rigth" id="btnMenuClose"></i>
+
+            <nav class="enlaces" id="enlaces">
+                <ul>
+                    <li> <a href="#"> Servicios </a></li>
+                    <li> <a href="#"> Equipo </a></li>
+                    <li> <a href="#"> Contacto </a></li>
+                </ul>
+            </nav>
+
+            <div class="sociales">
+                <a href="#"><span class="fab fa-facebook"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+        </div>
+
+        <i class="fas fa-bars" id="btnMenuOpen"></i>
+
+    </div> <!--menu principal fin-->
+
+    <section id="menu-productos">
+        <div class="contenedor-principal">
+            <button id="btn-izquierda"><span class="fas fa-angle-left"></span></button>
+
+            <div class="slider">
+                <div class="container-productos">
+                    <div class="descripcionn-productos">
+                        <h2> Producto <b> premium</b></h2>
+                        <h1>Peperonni</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste qui 
+                            debitis nesciunt voluptatum est dolorum provident unde temporibus, excepturi facilis cupiditate quidem hic. Quaerat porro ut dolorem et corrupti! Repellendus.</p>
+
+                        <button class="btn">Solicitala aquí<span class="fas fa-angle-rigth"></span></button>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../img/menu/peperoni.png" alt="">
+                    </div>
 
 
 
+                </div>
 
+
+                <div class="container-productos">
+                    <div class="descripcionn-productos">
+                        <h2> Producto <b> basico</b></h2>
+                        <h1>Margarita</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti consequatur recusandae incidunt harum. Deserunt, 
+                            doloremque quidem earum nulla aliquid reprehenderit rerum exercitationem ducimus repudiandae ut laborum modi quisquam dolore facere.</p>
+
+                        <button class="btn">Solicitala aquí<span class="fas fa-angle-rigth"></span></button>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../img/menu/margarita.png" alt="">
+                    </div>
+                </div>
+                <div class="container-productos">
+                    <div class="descripcion-productos">
+                        <h2> Producto <b> premium</b></h2>
+                        <h1>Americana</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In perspiciatis quisquam, quia aperiam incidunt quae sunt dolores 
+                            dolorum molestiae obcaecati natus qui architecto cupiditate magni minus alias debitis reprehenderit saepe.</p>
+
+                        <button class="btn">Solicitala aquí<span class="fas fa-angle-rigth"></span></button>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../img/menu/americana.png" alt="">
+                    </div>
+                </div>
+                <div class="container-productos">
+                    <div class="descripcionn-productos">
+                        <h2> Producto <b> premium</b></h2>
+                        <h1>Suprema</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat, quasi omnis nesciunt odio quos dolores earum 
+                            qui? Inventore commodi ea, amet natus quia aspernatur impedit temporibus quaerat praesentium. A.</p>
+
+                        <button class="btn">Solicitala aquí<span class="fas fa-angle-rigth"></span></button>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../img/menu/suprema.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button id="btn-derecha"><span class="fas fa-angle-rigth"></span></button>
+        </div>
+    </section>
 
 
     <h1 class="titulos"> Titulo </h1>
     <h2 class="subtitulos"> subtitulo </h2>
     <button class="btn"> boton <span class="fas fa-angle-rigth"></span></button>
-    
+
+    <script src="../js/java.js"></script>
 </body>
+
 </html>
